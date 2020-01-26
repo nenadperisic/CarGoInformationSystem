@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[top= 27mm, bottom=27mm, left=25mm, right=25mm]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, serbian]{babel}
+
+\usepackage{float}
+\usepackage{booktabs,hhline}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[T1]{fontenc}
+\usepackage{dirtytalk}
+\usepackage{multicol}
+
+\pagenumbering{arabic}
+
+\usepackage{graphicx}
+\graphicspath{ {./Slike/} }
+
+\usepackage[unicode]{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linktoc = all,    
+    linkcolor = blue,
+}
+
+\renewcommand{\contentsname}{Sadržaj}
+\renewcommand{\figurename}{Slika}
+
+\begin{document}
+
+\input{Sekcije/0_naslovna.tex}
+
+\newpage
+\begin{abstract}
+U ovom seminarskom radu biće predstavljen informacioni sistem za CarGo aplikaciju. Na početku će biti opisan sam sistem i sve situacije u kojima se on koristi. Nakon toga ćemo predstaviti arhitekturu sistema i bazu podataka, a na kraju predlog korisničkog interfejsa aplikacije. Ovaj rad predstavlja grupni projekat iz predmeta \say{Informacioni sistemi} na master studijama Matematičkog fakulteta.
+\end{abstract}
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+\input{Sekcije/1_uvod.tex}
+\input{Sekcije/2_analiza_sistema.tex}
+\input{Sekcije/3_slucajevi_upotrebe.tex}
+\input{Sekcije/4_arhitektura_sistema.tex}
+\input{Sekcije/5_baza_podataka.tex}
+\input{Sekcije/6_Korisnicki_interfejs.tex}
+\input{Sekcije/7_Zakljucak.tex}
+\newpage
+
+
+\addcontentsline{toc}{section}{Bibliografija}
+\appendix
+\bibliography{Sekcije/reference}
+\bibliographystyle{plain}
+\appendix
+
+
+\end{document}
